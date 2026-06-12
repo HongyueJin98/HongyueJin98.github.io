@@ -6,62 +6,93 @@
 
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: #ffffff;
+    background: #fafafa;
     color: #222;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 60px auto;
     padding: 0 30px;
 }
 
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 260px 1fr;
     gap: 45px;
-    align-items: center;
+    align-items: start;
 }
 
 .profile {
-    width: 230px;
-    border-radius: 8px;
+    width: 240px;
+    border-radius: 10px;
 }
 
 h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 44px;
+    margin: 0 0 10px 0;
 }
 
-.intro {
+.subtitle {
     font-size: 18px;
-    line-height: 1.7;
+    color: #555;
+    margin-bottom: 25px;
 }
 
-.nav {
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+.bio {
+    font-size: 17px;
+    line-height: 1.8;
 }
 
-.nav a {
-    padding: 12px 20px;
+.links {
+    margin-top: 25px;
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    padding: 9px 15px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    text-decoration: none;
     color: #222;
-    font-size: 16px;
+    text-decoration: none;
 }
 
-.nav a:hover {
-    background: #f2f2f2;
+.links a:hover {
+    background: #f0f0f0;
 }
 
 .section {
-    margin-top: 50px;
-    line-height: 1.7;
+    margin-top: 45px;
+}
+
+.section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+@media (max-width: 750px) {
+    .header {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        width: 220px;
+    }
 }
 </style>
 </head>
@@ -69,39 +100,59 @@ h1 {
 <body>
 
 <div class="container">
+<div class="card">
 
-    <div class="header">
+<div class="header">
+
+    <div>
         <img src="images/profile.jpg" class="profile">
+    </div>
 
-        <div>
-            <h1>Hongyue Jin</h1>
+    <div>
+        <h1>Hongyue Jin</h1>
 
-            <p class="intro">
-                Welcome to my personal website.  
-                This site includes my research interests, previous projects,
-                publications, and selected code.
-            </p>
+        <div class="subtitle">
+            Computer Systems · GPU Security · Computer Architecture
+        </div>
+
+        <p class="bio">
+            Welcome to my personal website. I am interested in computer systems,
+            GPU security, side-channel attacks, computer architecture, and
+            interdisciplinary computational research. This website collects my
+            research experience, selected projects, publications, notes, and code.
+        </p>
+
+        <div class="links">
+            <a href="research.html">Research</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html">Publications</a>
+            <a href="cv.pdf">CV</a>
+            <a href="life.html">Life</a>
+            <a href="mailto:windeaves@gmail.com">Email</a>
+            <a href="https://github.com/HongyueJin98">GitHub</a>
         </div>
     </div>
 
-    <div class="nav">
-        <a href="projects.html">Previous Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="research.html">Research</a>
-        <a href="cv.pdf">CV</a>
-        <a href="https://github.com/HongyueJin98">GitHub</a>
-        <a href="mailto:windeaves@gmail.com">Contact</a>
-    </div>
+</div>
 
-    <div class="section">
-        <h2>About</h2>
+<div class="section">
+    <h2>News</h2>
+    <ul>
+        <li>Website under construction.</li>
+        <li>More research projects and course projects will be added soon.</li>
+    </ul>
+</div>
 
-        <p>
-            My interests include GPU security, system security,
-            computer architecture, bioinformatics, and computational biology.
-        </p>
-    </div>
+<div class="section">
+    <h2>Selected Highlights</h2>
+    <ul>
+        <li>GPU security and side-channel research.</li>
+        <li>Computer architecture and systems projects.</li>
+        <li>Bioinformatics and computational biology analysis.</li>
+    </ul>
+</div>
 
+</div>
 </div>
 
 </body>
