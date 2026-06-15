@@ -1,23 +1,136 @@
-<div class="project-card">
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Course Projects - Hongyue Jin</title>
 
-<h3>5-Stage MIPS Pipeline Processor</h3>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #fafafa;
+    color: #222;
+}
 
-<p>
-Designed and implemented a five-stage pipelined MIPS processor in VHDL.
-The project was developed and simulated using QuestaSim/ModelSim on Linux
-and included core processor components such as the ALU, control unit,
-instruction memory, data memory, and pipeline registers.
-</p>
+.container {
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
 
-<p>
-<strong>Technologies:</strong>
-VHDL, MIPS, Computer Architecture, Digital Design
-</p>
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
 
-<p>
-<a href="https://github.com/HongyueJin98/ee126-arm-pipeline-processor">
-GitHub Repository
-</a>
-</p>
+.project {
+    margin-top: 30px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.meta {
+    color: #666;
+    font-size: 15px;
+}
+
+.tags {
+    color: #444;
+    font-size: 15px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.back {
+    margin-bottom: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<div class="back">
+    <a href="index.html">← Back to Home</a>
+</div>
+
+<h1>Course Projects</h1>
+
+<div class="project">
+    <h2>5-Stage MIPS Pipeline Processor</h2>
+
+    <p class="meta">
+        EE126 Computer Engineering · Tufts University
+    </p>
+
+    <p>
+        Designed and implemented a five-stage pipelined MIPS processor in VHDL.
+        The project includes core processor components such as instruction memory,
+        data memory, ALU, register file, control logic, and pipeline registers.
+        The design was developed and simulated on Linux using QuestaSim/ModelSim.
+    </p>
+
+    <p class="tags">
+        <strong>Keywords:</strong>
+        VHDL · MIPS · Pipeline Processor · Computer Architecture · Digital Design
+    </p>
+
+    <p>
+        <a href="https://github.com/HongyueJin98/ee126-arm-pipeline-processor" target="_blank">
+            GitHub Repository
+        </a>
+    </p>
+</div>
+
+<div class="project">
+    <h2>FPGA Thermal Side-Channel Analysis</h2>
+
+    <p class="meta">
+        EE156 Advanced Topics in Computer Architecture · Tufts University
+    </p>
+
+    <p>
+        Investigated whether encryption algorithms running on FPGA platforms can
+        be identified through side-channel-related hardware characteristics. The
+        project analyzed AES, PRESENT, Serpent, and RSA using Vivado HLS synthesis
+        results, including latency, flip-flop usage, LUT usage, and optimization
+        effects. A neural network classifier was trained on extracted RTL-level
+        features to recognize different encryption algorithms.
+    </p>
+
+    <p class="tags">
+        <strong>Keywords:</strong>
+        FPGA · Side-Channel Analysis · Encryption · Vivado HLS · Neural Network
+    </p>
+
+    <p>
+        <a href="https://github.com/HongyueJin98/ee156-fpga-thermal-side-channel" target="_blank">
+            GitHub Repository
+        </a>
+    </p>
+</div>
 
 </div>
+</div>
+
+</body>
+</html>
+```
